@@ -42,7 +42,7 @@ print(name_slicing[:])  # Start- und Endindex weglassen, um die gesamte Zeichenk
 
 # ----------------------------------------------------------------
 
-# STRINGS KONKATENIEREN
+# STRINGS KONKATENIEREN (VERKETTEN)
 
 x = "Apfel"
 y = "Baum"
