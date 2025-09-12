@@ -46,14 +46,12 @@ print(name_slicing[:])  # Start- und Endindex weglassen, um die gesamte Zeichenk
 
 x = "Apfel"
 y = "Baum"
-
 print(x + y) # Ausgabe: ApfelBaum
 
 a = "Hallo" 
 b = ' '
 c = "Python"
 d = "!"
-
 print(a + b + c + d) # Ausgabe: Hallo Python!
 
 print(a - b) # Fehler: Subtraktion von Zeichenketten ist nicht erlaubt
