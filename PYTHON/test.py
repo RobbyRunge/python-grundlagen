@@ -1,1 +1,0 @@
-print("Hallo, ich bin ein Hacker!")

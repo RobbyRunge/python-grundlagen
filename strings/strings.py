@@ -1,4 +1,4 @@
-# Verschiedene Arten von Zeichenketten in Python
+# VERSCHIEDENE MÖGLICHKEITEN, ZEICHENKETTEN ZU DEFINIEREN
 name_test = "John"
 name_test1 = 'Doe'
 # Ausgabe der Zeichenketten bleibt Struktur erhalten
@@ -9,7 +9,7 @@ print("""Lieber Hacker,
       Viele Grüße
   """)
 
-# len (Länge) einer Zeichenkette
+# LEN FUNKTION (LÄNGE EINER ZEICHENKETTE)
 name = "Robby"
 
 print(len("Robby"))  # Direkte Ausgabe der Länge
