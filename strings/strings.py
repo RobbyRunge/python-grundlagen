@@ -26,7 +26,10 @@ n = len("Robby")
 print("Robby"[n])  # Zugriff auf ein einzelnes Zeichen in der Zeichenkette (Index außerhalb des Bereichs)
 print("Robby"[-1])  # Zugriff auf das letzte Zeichen in der Zeichenkette
 
-# Slicing (Ausschneiden) von Zeichenketten
+# ----------------------------------------------------------------
+
+# SLICING (AUSSCHNEIDEN) VON ZEICHENKETTEN
+
 name_slicing = "Robby"
 
 print(name_slicing[0:3])  # Ausgabe der ersten drei Zeichen (Index 0 bis 2), Endindex ist exklusiv (ausschließend) - Ausgabe: Rob
@@ -36,3 +39,24 @@ print(name_slicing[2:])  # Endindex weglassen, wenn bis zum Ende geschnitten wer
 print(name_slicing[-1000:1000])  # Start- und Endindex außerhalb des Bereichs - Ausgabe: Robby
 
 print(name_slicing[:])  # Start- und Endindex weglassen, um die gesamte Zeichenkette zu erhalten - Ausgabe: Robby
+
+# ----------------------------------------------------------------
+
+# STRINGS KONKATENIEREN
+
+x = "Apfel"
+y = "Baum"
+
+print(x + y) # Ausgabe: ApfelBaum
+
+a = "Hallo" 
+b = ' '
+c = "Python"
+d = "!"
+
+print(a + b + c + d) # Ausgabe: Hallo Python!
+
+print(a - b) # Fehler: Subtraktion von Zeichenketten ist nicht erlaubt
+print(a / b) # Fehler: Division von Zeichenketten ist nicht erlaubt
+
+print(3*d) # Ausgabe: !!! # Zeichenkette wird 3 Mal wiederholt, geht nur mit Zahl und Zeichenkette

@@ -1,24 +1,30 @@
-# Datentypen in Python
+# DATENTYPEN IN PYTHON
 name = "Florian"      # String (Text)
 age = 30              # Integer (Ganzzahl)
 number = 100_000      # Integer mit Unterstrichen zur besseren Lesbarkeit der Zahl
 height = 1.75         # Float (Gleitkommazahl)
 is_student = False    # Boolean (Wahrheitswert)
 
-# Funktion zur Überprüfung des Datentyps
+# ----------------------------------------------------------------
+
+# FUNKTIONEN ZUR ABFRAGE DES DATENTYPS
 print(type(name))        # <class 'str'>
 print(type(age))         # <class 'int'>
 print(type(number))      # <class 'int'>
 print(type(height))      # <class 'float'>
 print(type(is_student))  # <class 'bool'>
 
-# Konvertierung zwischen Datentypen
+# ----------------------------------------------------------------
+
+# KONVERTIERUNG ZWISCHEN DATENTYPEN
 str()     # Konvertierung zu String
 int()     # Konvertierung zu Integer
 float()   # Konvertierung zu Float
 bool()    # Konvertierung zu Boolean
 
-# Beispiel für Konvertierung
+# ----------------------------------------------------------------
+
+# BEISPIELE FÜR DIE KONVERTIERUNG ZWISCHEN DATENTYPEN
 print((str(age)))        # "30"
 print((str(name)))       # "Florian"
 print((str(number)))     # "100000"
