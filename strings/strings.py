@@ -58,3 +58,24 @@ print(a - b) # Fehler: Subtraktion von Zeichenketten ist nicht erlaubt
 print(a / b) # Fehler: Division von Zeichenketten ist nicht erlaubt
 
 print(3*d) # Ausgabe: !!! # Zeichenkette wird 3 Mal wiederholt, geht nur mit Zahl und Zeichenkette
+
+# ----------------------------------------------------------------
+
+# STRING METHODEN (FUNKTIONEN, DIE AUF ZEICHENKETTEN ANGEWENDET WERDEN KÖNNEN)
+
+print(dir(str)) # Ausgabe aller Methoden, die auf Zeichenketten angewendet werden können
+
+print("Robby".zfill(10)) # Füllt die Zeichenkette mit Nullen auf eine Gesamtlänge von 10 auf, Ausgabe: 00000Robby
+
+print("Robby123!".upper()) # Wandelt die Zeichenkette in Großbuchstaben um, Ausgabe: ROBBY123!
+print("Robby123!".lower()) # Wandelt die Zeichenkette in Kleinbuchstaben um, Ausgabe: robby123!
+
+print("rObbY123!".capitalize()) # Wandelt den ersten Buchstaben in Großbuchstaben um und den Rest in Kleinbuchstaben, Ausgabe: Robby123!
+
+print("Robby123!".isupper()) # Prüft, ob alle Buchstaben in Großbuchstaben sind, Ausgabe: False
+print("ROBBY123!".islower()) # Prüft, ob alle Buchstaben in Kleinbuchstaben sind, Ausgabe: False
+
+print("Robby123!".isnumeric()) # Prüft, ob die Zeichenkette nur aus Zahlen besteht, Ausgabe: False
+print("Robby!".isalpha()) # Prüft, ob die Zeichenkette nur aus Buchstaben besteht, Ausgabe: True
+
+print("Robby;Pamela;Mia;Tokage".split(";")) # Teilt die Zeichenkette an jedem Semikolon und gibt eine Liste zurück, Ausgabe: ['Robby', 'Pamela', 'Mia', 'Tokage']
