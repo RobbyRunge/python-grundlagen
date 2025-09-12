@@ -79,3 +79,22 @@ print("Robby123!".isnumeric()) # Prüft, ob die Zeichenkette nur aus Zahlen best
 print("Robby!".isalpha()) # Prüft, ob die Zeichenkette nur aus Buchstaben besteht, Ausgabe: True
 
 print("Robby;Pamela;Mia;Tokage".split(";")) # Teilt die Zeichenkette an jedem Semikolon und gibt eine Liste zurück, Ausgabe: ['Robby', 'Pamela', 'Mia', 'Tokage']
+print("Robby\nPamela\nMia\nTokage".splitlines()) # Teilt die Zeichenkette an jedem Zeilenumbruch und gibt eine Liste zurück, Ausgabe: ['Robby', 'Pamela', 'Mia', 'Tokage']
+print("Robby\nPamela\nMia\nTokage".split("\n")) # Teilt die Zeichenkette an jedem Zeilenumbruch und gibt eine Liste zurück, Ausgabe: ['Robby', 'Pamela', 'Mia', 'Tokage']
+
+print("   Robby   ".strip()) # Entfernt Leerzeichen am Anfang und Ende der Zeichenkette, Ausgabe: Robby
+print("   Rob  by   ".strip()) # Entfernt Leerzeichen am Anfang und Ende der Zeichenkette, Ausgabe: Rob  by
+
+print("   Robby   ".replace(" ", "")) # Ersetzt alle Leerzeichen durch nichts (" "  ersetzt durch ""), Ausgabe: Robby
+print("   Rob  by   ".replace(" ", "")) # Ersetzt alle Leerzeichen durch nichts (" "  ersetzt durch ""), Ausgabe: Robby
+print("   Robby   ".replace("b", ".")) # Ersetzt alle "b" durch ".", Ausgabe: Ro..y
+
+print("Wasserfall".count("s")) # Zählt, wie oft "s" in der Zeichenkette vorkommt, Ausgabe: 2
+print("168866553232158684765143".count("3")) # Zählt, wie oft "3" in der Zeichenkette vorkommt, Ausgabe: 5
+
+print("Wasserfall".index("e")) # Gibt den Index des ersten Vorkommens von "e" zurück, Ausgabe: 4
+print("Wasserfall".index("Q")) # Gibt den Index des ersten Vorkommens von "Q" zurück, Ausgabe: ValueError, wenn das Zeichen nicht gefunden wird
+print("Wasserfall".find("e")) # Gibt den Index des ersten Vorkommens von "e" zurück aber es wird kein Fehler ausgegeben, Ausgabe: 4
+print("Wasserfall".find("Q")) # Gibt den Index des ersten Vorkommens von "Q" zurück aber es wird kein Fehler ausgegeben, Ausgabe: -1 (Fluchwert, wenn das Zeichen nicht gefunden wird)
+
+print("Wasser" in "Wasserfall") # Prüft, ob "Wasser" in der Zeichenkette "Wasserfall" enthalten ist, Ausgabe: True
