@@ -23,14 +23,16 @@ print(passwort3.find(2+2))                # Ausgabe: TypeError
 print(passwort1.index("4"))               # Ausgabe: IndexError
 
 # 2. Verwende passende String-Methoden, um die vorgegebenen Strings in die umzuwandeln, die als Kommentar vorgegeben sind:
-"passw0r7"      # PASSw0r72
+"passw0r7"      # PASSW0R72
 "Anime"         # 000000Anime3
 "florian"       # Florian
 "Kaguya"        # kaguya
 "0123456789"    # 9876543210
 
-print("passw0r7".upper().replace("7","72").replace("W", "w").replace("R", "r"))   # Ausgabe: PASSw0r72
-print("Anime".zfill(11).replace("e", "e3"))                                       # Ausgabe: 000000Anime3
-print("florian".capitalize())                                                     # Ausgabe: Florian
-print("Kaguya".lower())                                                           # Ausgabe: kaguya
-print("0123456789".replace("0123456789", "9876543210"))                           # Ausgabe: 9876543210
+print("passw0r7".upper().replace("7","72"))                 # Ausgabe: PASSW0R72
+print("Anime".zfill(11).replace("e", "e3"))                 # Ausgabe: 000000Anime3
+print("florian".capitalize())                               # Ausgabe: Florian
+print("Kaguya".lower())                                     # Ausgabe: kaguya
+
+print("0123456789".replace("0123456789", "9876543210"))     # Ausgabe: 9876543210
+print("0123456789"[::-1])                                   # Ausgabe: 9876543210 / Alternative Lösung durch Slicing (String umdrehen)
