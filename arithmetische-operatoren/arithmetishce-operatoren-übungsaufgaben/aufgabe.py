@@ -2,12 +2,12 @@
 
 # Was kommt bei den folgenden Rechnungen als Ergebnis heraus?
 12 * 12                     # Ausgabe: 144
-2.5 + 3.5                   # Ausgabe: 6
-20 / 5                      # Ausgabe: 4
+2.5 + 3.5                   # Ausgabe: 6.0
+20 / 5                      # Ausgabe: 4.0
 15 - 3 * 5                  # Ausgabe: 0
 8 + 10//4                   # Ausgabe: 10                     
 8 + 10/4                    # Ausgabe: 10.5 
-20 / (5 - 4)                # Ausgabe: 20
+20 / (5 - 4)                # Ausgabe: 20.0
 4 * 2.5 / 4                 # Ausgabe: 2.5                       
 1//2 - 3//4                 # Ausgabe: 0 
 (12 % 5) * (5 % 12)         # Ausgabe: 10                   
