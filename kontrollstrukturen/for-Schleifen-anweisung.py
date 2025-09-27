@@ -1,5 +1,10 @@
 # FOR-SCHLEIFEN-ANWEISUNG
-# Mit einer for-Schleife kannst du über eine Liste von Elementen iterieren. (muss nicht nur Listen sein, sondern auch Strings, Tupel, Sets, Dictionaries)
+# Mit einer for-Schleife kannst du über eine Liste von Elementen iterieren. (muss nicht nur Listen sein, sondern auch Strings, Tupel (unveränderliche Listen), Sets (ungeordnete Sammlungen), Dictionaries (Schlüssel-Wert-Paare))
+# Wird verwendet, wenn ein vorgegebener Bereich durchlaufen werden soll.
+# Wird verwendet, wenn der Durchlauf des vorgegebenen Bereichs nicht durch den Benutzer unterbrochen werden soll.
+# Endet, sobald der vorgegebene Bereich vollständig durchlaufen wurde. Die bedingung wäre hier "so lange noch nicht am Ende angekommen".
+# Kann nicht endloss laufen.
+# Beispiele: Listen, Tupel (unveränderliche Listen), Strings, Zahlenbereiche, ...
 
 # Hinweise zu for-Schleifen:
 # - wiederholt Anweisungen für jedes Element in einer Sequenz

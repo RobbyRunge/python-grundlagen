@@ -1,5 +1,9 @@
 # WHILE-SCHLEIFEN-ANWEISUNG
-# Eine While-Schleife wiederholt einen Codeblock, solange eine Bedingung wahr ist.
+# Wird verwenden, wenn kein vorgegebener Bereich durchlaufen werden soll, sondern der Abbruch von einer Bedingung abhängt.
+# Wird verwendet, wenn der Benutzer den Abbruch der Schleife steuern können soll.
+# Endet, sobald die Bedingung nicht mehr erfüllt ist.
+# Kann endloss laufen.
+# Beispiele: Hauptereignisschleife in Spielen, Viedospiele, Client-/Server-Programmierung, ...
 
 # Hinweise zu while-Schleifen:
 # - wiederholt Code, solange Bedingung True ist
