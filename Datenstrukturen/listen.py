@@ -18,7 +18,7 @@ print(listeMitWerten[-1])             # Zugriff auf das letzte Element der Liste
 print(listeMitWerten[0:2])            # Slicing (Teilliste von Index 0 bis 1)
 print(listeMitWerten[1:2])            # Slicing von Anfang bis Index 1
 print(listeMitWerten[1:10])           # Slicing von Anfang bis Index 9 (überschreitet die Listenlänge nicht)
-print(listeMitWerten[15])           # IndexError: list index out of range
+print(listeMitWerten[15])             # IndexError: list index out of range
 
 # + OPERATOR (KONKATENATION)
 
@@ -86,7 +86,7 @@ print(10 in liste9)                 # Prüft, ob ein Element in der Liste enthal
 # JOIN() - LISTE ZU STRING VERBINDEN
 
 liste10 = [0, 1, 2, 3, 4, 5, 6]
-print(";".join(liste10))                        # Fehler: join() funktioniert nur mit Zeichenketten (Strings)
+print(";".join(liste10))                          # Fehler: join() funktioniert nur mit Zeichenketten (Strings)
 liste11 = ["0", "1", "2", "3", "4", "5", "6"]
 print(";".join(liste11))                          # Verbindet alle Elemente der Liste zu einer Zeichenkette, Ausgabe: 0;1;2;3;4;5;6
 liste12 = ["M", "i", "a"]
