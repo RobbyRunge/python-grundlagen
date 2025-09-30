@@ -3,7 +3,7 @@
 
 # GRUNDLAGEN
 
-def sag_hallo1(name):         # Funktionskopf - ":" signalisiert das Ende des Kopfes - es darf keine leere Funktionen geben
+def sag_hallo1(name):         # Funktionskopf / def = Definition der Funktion, name = positionelles Argument
   pass                        # Platzhalter, wenn die Funktion noch keinen Code hat
 
 def sag_hallo2(vorname, nachname):          # Funktionskopf
