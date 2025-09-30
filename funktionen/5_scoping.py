@@ -1,7 +1,7 @@
 # SCOPING
 # Gültigkeitsbereich von Variablen built-in, global, lokal
 
-# built-in: in Python integrierte Funktionen (z.B. print(), len(), int(), str() etc.)
+# built-in: in der gesamten Python-Umgebung gültig
 # global: in der ganzen Datei gültig
 # lokal: nur innerhalb einer Funktion gültig
 
