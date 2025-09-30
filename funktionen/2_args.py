@@ -1,4 +1,4 @@
-# ARGS
+# ARGS - ARGUMENTS
 # Funktionen können eine beliebige Anzahl an Argumenten empfangen
 
 def addieren(*summanden):   # * bedeutet, dass eine beliebige Anzahl an Argumenten übergeben werden kann (wird als Tupel empfangen) / args = arguments
