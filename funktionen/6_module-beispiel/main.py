@@ -18,3 +18,17 @@ quotient_from_import = dividieren(8, 2)       # Verwende die Funktion "dividiere
 print(f"Summe: {summe}, Differenz: {differenz}, Produkt: {produkt}, Quotient: {quotient}")
 
 print(f"Summe (from import): {summe_from_import}, Differenz (from import): {differenz_from_import}, Produkt (from import): {produkt_from_import}, Quotient (from import): {quotient_from_import}")
+
+# Erklärung: if __name__ == "__main__"
+
+if __name__ == "__main__":
+  print("Das Hauptprogramm wird direkt ausgeführt.")
+
+# prüft, ob das aktuelle Python-Skript direkt ausgeführt wird (also z.B. mit python main.py) und nicht als Modul in ein anderes Skript importiert wurde.
+
+# Bedeutung:
+# Ist das Skript das Hauptprogramm, dann ist __name__ gleich "__main__" und der nachfolgende Code wird ausgeführt.
+# Wird das Skript als Modul importiert, ist __name__ der Modulname und der Code wird nicht ausgeführt.
+
+# Vorteil:
+# So kannst du Code schreiben, der nur beim direkten Ausführen des Skripts läuft (z.B. Tests, Hauptlogik), aber nicht beim Importieren als Modul.
