@@ -38,23 +38,36 @@ cat2.vorstellen()
 
 # ----------------------------------------
 
+# Die Klasse "Pokemon" modelliert ein Pokémon mit Namen, Level und Lebenspunkten.
+# Sie bietet Methoden, um das Pokémon vorzustellen, Lebenspunkte und Level anzuzeigen,
+# es weiterzuentwickeln und andere Pokémon anzugreifen.
 class Pokemon:
-  def __init__(self,name, level):
-    self.name = name
-    self.__level = level                     # Private Variable, nicht direkt von außen zugreifbar
-    self.vorstellen()                        # Aufruf der Methode innerhalb des Konstruktors (self muss angegeben werden, da es sich um eine Instanzmethode handelt) - macht die unteren Zeilen überflüssig 1*
+  def __init__(self, name):
+    self.__name = name
+    self.__level = 1                         # Private Variable, nicht direkt von außen zugreifbar
+    self.__lebenspunkte = 42
+    
+    # self.vorstellen()                      # Aufruf der Methode innerhalb des Konstruktors (self muss angegeben werden, da es sich um eine Instanzmethode handelt)
 
   def vorstellen(self):
-    print(f"{self.name}, {self.name}!")
+    print(f"{self.__name}, {self.__name}!")
 
-  def get_level(self):                       # Getter-Methode
-    return self.__level                      # Zugriff auf die private Variable
+  def zeige_lebenspunkte(self):
+    return self.__lebenspunkte               # Zugriff auf die private Variable durch eine Methode
 
-if __name__ == "__main__":
-  bisasam = Pokemon("Bisasam", 5)            # Instanzierung eines Objekts der Klasse Pokemon Reihenfolge beachtet, davor kann nicht die bisasam.vorstellen() Methode aufgerufen werden
-  schiggy = Pokemon("Schiggy", 8)
-  
-  print(bisasam.get_level())                 # Zugriff auf die private Variable über die Getter-Methode
+  def zeige_level(self):
+    print(f"{self.__name} : {self.__level}")
+    return self.__level
 
-  # schiggy.vorstellen()                     # 1*
-  # bisasam.vorstellen()                     # 1*        
+  def entwicklen(self):
+    self.__level += 1
+
+  def attackieren(self, other, schaden):     # "other" wird als gängiges Wort für das andere Objekt verwendet (in dem Fall ein anderes Pokemon)
+    other.__lebenspunkte -= schaden
+
+if __name__ == "__main__":                   # Teste die Klasse nur, wenn das Skript direkt ausgeführt wird
+  p1 = Pokemon("Pikachu")                  
+  p2 = Pokemon("Bisasam")
+
+  p1.attackieren(p2, 10)
+  print(p2.zeige_lebenspunkte())  
