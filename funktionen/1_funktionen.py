@@ -21,3 +21,13 @@ print(addieren(10, 32))      # Ausgabe: 42 - Rückgabewert wird ausgegeben
 
 s = addieren(10, 32)         # Rückgabewert wird in Variable gespeichert (s hat jetzt den Wert 42)
 print(f"Summe: {s}")         # Ausgabe: Summe: 42
+
+
+# Funktionen vs. Methoden
+
+# Funktionen sind unabhängige Codeblöcke, die außerhalb von Klassen definiert werden und beliebig aufgerufen werden können.
+# Methoden sind Funktionen, die innerhalb einer Klasse definiert sind und immer auf ein Objekt (meist über self) zugreifen.
+# Sie werden mit einem Punkt an einem Objekt aufgerufen, z.B. objekt.methode().
+# Kurz:
+# Funktionen = allgemein,
+# Methoden = an Klassen/Objekte gebunden.
